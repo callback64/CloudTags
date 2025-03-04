@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Cloud tags"
 include(":app")
- 
+include(":tagcloud")
