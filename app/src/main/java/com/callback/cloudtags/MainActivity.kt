@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.callback.cloudtags.ui.theme.CloudTagsTheme
+import com.callback.tagcloud.TagCloud
+
 //import com.callback.tagcloud.TagCloud
 
 class MainActivity : ComponentActivity() {
@@ -28,9 +30,9 @@ class MainActivity : ComponentActivity() {
                 }
             }*/
 
-            /*TagCloud(
+            TagCloud(
                 listOf("One", "Second", "Car", "Doll", "Chair", "Intention")
-            )*/
+            )
         }
     }
 }

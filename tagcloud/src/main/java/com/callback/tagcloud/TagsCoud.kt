@@ -1,11 +1,24 @@
 package com.callback.tagcloud
 
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.detectDragGestures
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.text.BasicText
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.unit.dp
+import java.time.format.TextStyle
+import kotlin.math.*
 
 /*import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -22,7 +35,7 @@ import kotlin.math.acos
 import kotlin.math.cos
 import kotlin.math.sin*/
 
-@Composable
+/*@Composable
 fun TagCloud(
     tags: List<String>,
     modifier: Modifier = Modifier,
@@ -33,9 +46,9 @@ fun TagCloud(
     //var rotationX by remember { mutableStateOf(0.0f) }
     //var rotationY by remember { mutableStateOf(0.0f) }
 
-}
+}*/
 
-/*@Composable
+@Composable
 fun TagCloud(
     tags: List<String>,
     modifier: Modifier = Modifier,
@@ -45,7 +58,7 @@ fun TagCloud(
     var rotationX by remember { mutableStateOf(0f) }
     var rotationY by remember { mutableStateOf(0f) }
 
-    /*Box(
+    Box(
         modifier = modifier
             .fillMaxWidth()
             .height(200.dp)
@@ -91,7 +104,7 @@ fun TagCloud(
             // Рисуем тег
             BasicText(
                 text = tag,
-                style = TextStyle(fontSize = (16 * scale).sp),
+                //style = TextStyle(fontSize = (16 * scale).sp),
                 modifier = Modifier
                     .graphicsLayer(
                         translationX = x2D + centerX,
@@ -104,4 +117,4 @@ fun TagCloud(
             )
         }
     }
-}*/
+}
